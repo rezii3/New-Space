@@ -1,0 +1,40 @@
+@use "../../style/paint.scss";
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white !important;
+  .content {
+    max-width: 1252px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .text-side{
+      width: 90%;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+      span{
+        font-size: 34px;
+      }
+      p{
+        font-size: 24px;
+
+      }
+    }
+    .photo-side{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        object-fit: fill;
+        width: 700px;
+        height: 500px;
+      }
+    }
+  }
+}

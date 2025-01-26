@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="content">
+      <div class="top-side">
+        <a (click)="loadCards('dishes')">კერძები/დესერტები</a>
+        <a (click)="loadCards('cocktails')">კოქტეილები</a>
+        <a (click)="loadCards('wines')">ღვინოები</a>
+      </div>
+      <div class="bottom-side">
+        <app-cards [cards]="currentCards"></app-cards>
+      </div>
+    </div>
+  </div>
+  
