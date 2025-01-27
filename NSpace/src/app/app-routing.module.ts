@@ -15,6 +15,11 @@ const routes: Routes = [
         (m) => m.MenuModule
       ),
   },
+  {
+    path:'Gallery',
+    title: 'Gallery',
+    loadChildren: () => import('./features/space/space.module').then((m) => m.SpaceModule)
+  }
 ];
 
 @NgModule({

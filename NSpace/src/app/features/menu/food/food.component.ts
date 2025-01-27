@@ -9,12 +9,12 @@ import { Component } from '@angular/core';
 })
 export class FoodComponent {
   allCards = [
-    { category: 'dishes', text: 'სტეიკი', image: 'dishes1.jpg' },
-    { category: 'dishes', text: 'დესერტი', image: 'dishes2.jpg' },
-    { category: 'cocktails', text: 'მოჰიტო', image: 'cocktail1.jpg' },
-    { category: 'cocktails', text: 'მარგარიტა', image: 'cocktail2.jpg' },
-    { category: 'wines', text: 'წითელი ღვინო', image: 'wine1.jpg' },
-    { category: 'wines', text: 'თეთრი ღვინო', image: 'wine2.jpg' },
+    { category: 'dishes', text: 'სტეიკი', image: '../../../../assets/photos/koktaile.jpg' },
+    { category: 'dishes', text: 'დესერტი', image: '../../../../assets/photos/koktaile.jpg' },
+    { category: 'cocktails', text: 'მოჰიტო', image: '../../../../assets/photos/koktaile.jpg' },
+    { category: 'cocktails', text: 'მარგარიტა', image: '../../../../assets/photos/koktaile.jpg' },
+    { category: 'wines', text: 'წითელი ღვინო', image: '../../../../assets/photos/koktaile.jpg' },
+    { category: 'wines', text: 'თეთრი ღვინო', image: '../../../../assets/photos/koktaile.jpg' },
   ];
 
   currentCards = this.allCards;

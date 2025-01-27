@@ -7,6 +7,7 @@ import { NzCarouselModule } from 'ng-zorro-antd/carousel';
 import { CaruselComponent } from './carusel/carusel.component';
 import { MainCardsComponent } from './main-cards/main-cards.component';
 import { SpaceInfoComponent } from './space-info/space-info.component';
+import { AllCardComponent } from './all-card/all-card.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { SpaceInfoComponent } from './space-info/space-info.component';
     CardsComponent,
     CaruselComponent,
     MainCardsComponent,
-    SpaceInfoComponent
+    SpaceInfoComponent,
+    AllCardComponent
   ],
   imports: [
     CommonModule,
