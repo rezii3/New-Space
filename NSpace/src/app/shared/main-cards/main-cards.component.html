@@ -1,17 +1,13 @@
 <div class="container">
   <div class="content">
-    <div class="card" *ngFor="let item of Img ">
-      <div class="card-header">
-        {{item.text}}
-      </div>
+    <div class="card" *ngFor="let card of Img">
       <div class="card-image">
-        <img [src]="item.src" alt="" />
+        <img [src]="card.src" alt="">
       </div>
-      <div class="card-body">
-        <p>
-          სივრცე სადაც დაისვენბ გაერტთობი შეჭამ....
-        </p>
-        <button class="card-button">View Menu</button>
+      <div class="card-content">
+        <h2>{{card.text}}</h2>
+        <p>{{card.desc}}</p>
+        <a href="#" class="learn-more">LEARN MORE</a>
       </div>
     </div>
   </div>

@@ -9,8 +9,8 @@ import { Component } from '@angular/core';
 })
 export class MainCardsComponent {
   Img = [
-    {src: 'assets/photos/koktaile.jpg', text: 'მენიუ'},
-    { src: 'assets/photos/IMG_4654.JPG', text: 'გარე სივრცე' },
-    { src: 'assets/photos/IMG_0046.jpg', text: 'შიდა სივრცე' }
+    {src: 'assets/photos/koktaile.jpg', text: 'მენიუ',desc: 'ნიუ სფეისი არის კაფე-რესტორანი, სივრცე კომფორტული.'},
+    { src: 'assets/photos/IMG_4654.JPG', text: 'გარე სივრცე',desc: 'ნიუ სფეისი არის კაფე-რესტორანი, სივრცე კომფორტული.' },
+    { src: 'assets/photos/IMG_9995 (1).jpg', text: 'გარე სივრცე',desc: 'ნიუ სფეისი არის კაფე-რესტორანი, სივრცე კომფორტული.' }
   ];
 }

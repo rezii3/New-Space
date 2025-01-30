@@ -1,40 +1,55 @@
 @use "../../style/paint.scss";
-.container{
+
+.container {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: white !important;
-  margin-top: 50px;
+  margin: 50px 0px;
+
   .content {
     max-width: 1252px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .text-side{
-      width: 90%;
-      height: 500px;
+
+    .text-side {
+      width: 40%;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      gap: 10px;
-      span{
-        font-size: 34px;
-      }
-      p{
-        font-size: 24px;
+      gap: 20px;
 
+      span {
+        font-size: 34px;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #666;
       }
     }
-    .photo-side{
+
+    .photo-side {
       display: flex;
       justify-content: center;
       align-items: center;
-      img{
-        object-fit: fill;
-        width: 700px;
-        height: 500px;
+      overflow: hidden;
+      border-radius: 10px;
+
+      img {
+        object-fit: cover;
+        width: 500px;
+        height: 400px;
+        border-radius: 10px;
+        transition: transform 0.5s ease;
+        &:hover {
+          transform: scale(1.1);
+        }
       }
     }
   }

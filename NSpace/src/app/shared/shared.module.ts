@@ -8,6 +8,7 @@ import { CaruselComponent } from './carusel/carusel.component';
 import { MainCardsComponent } from './main-cards/main-cards.component';
 import { SpaceInfoComponent } from './space-info/space-info.component';
 import { AllCardComponent } from './all-card/all-card.component';
+import { VideoSideComponent } from './video-side/video-side.component';
 
 
 @NgModule({
@@ -15,14 +16,16 @@ import { AllCardComponent } from './all-card/all-card.component';
     CardsComponent,
     CaruselComponent,
     MainCardsComponent,
-    SpaceInfoComponent
+    SpaceInfoComponent,
+    VideoSideComponent
   ],
   declarations: [
     CardsComponent,
     CaruselComponent,
     MainCardsComponent,
     SpaceInfoComponent,
-    AllCardComponent
+    AllCardComponent,
+    VideoSideComponent
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,53 @@
+@use"../../style/paint.scss";
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a;
+        .footer {
+            color: paint.$ColdWhite;
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1252px;
+        width: 100%;
+            .footer-section {
+              width: 30%;
+              h4 {
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 15px;
+                color: paint.$ColdWhite
+              }
+              p {
+                font-size: 14px;
+                margin: 5px 0;
+              }
+              a {
+                color: paint.$LightBlue;
+                text-decoration: none;
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+              .date {
+                font-size: 12px;
+                color: gray;
+              }
+            }
+            .gallery-grid {
+              display: grid;
+              grid-template-columns: repeat(4, 1fr);
+              gap: 5px;
+
+              img {
+                width: 60px;
+                height: 60px;
+                object-fit: cover;
+                border-radius: 5px;
+              }
+            }
+          }
+    }
