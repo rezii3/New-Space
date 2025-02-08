@@ -1,14 +1,25 @@
 <div class="container">
-    <div class="content">
-      <div class="top-side">
-        <a (click)="loadCards('dishes')">კერძები/დესერტები</a>
-        <a (click)="loadCards('cocktails')">კოქტეილები</a>
-        <a (click)="loadCards('wines')">ღვინოები</a>
-      </div>
-      <div class="bottom-side">
-        <img src="" alt="">
-        <app-cards [cards]="currentCards"></app-cards>
-      </div>
+  <div class="content">
+    <div class="top-side">
+      <a 
+        (click)="loadCards('dishes')" 
+        [ngClass]="{ 'active': selectedCategory === 'dishes' }">
+        კერძები/დესერტები
+      </a>
+      <a 
+        (click)="loadCards('cocktails')" 
+        [ngClass]="{ 'active': selectedCategory === 'cocktails' }">
+        კოქტეილები
+      </a>
+      <a 
+        (click)="loadCards('wines')" 
+        [ngClass]="{ 'active': selectedCategory === 'wines' }">
+        ღვინოები
+      </a>
+    </div>
+    <div class="bottom-side">
+      <img src="" alt="">
+      <app-cards [cards]="currentCards"></app-cards>
     </div>
   </div>
-  
+</div>

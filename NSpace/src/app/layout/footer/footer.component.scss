@@ -1,53 +1,68 @@
 @use"../../style/paint.scss";
-.container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #1a1a1a;
-        .footer {
-            color: paint.$ColdWhite;
-            padding: 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            max-width: 1252px;
-        width: 100%;
-            .footer-section {
-              width: 30%;
-              h4 {
-                font-size: 16px;
-                font-weight: bold;
-                margin-bottom: 15px;
-                color: paint.$ColdWhite
-              }
-              p {
-                font-size: 14px;
-                margin: 5px 0;
-              }
-              a {
-                color: paint.$LightBlue;
-                text-decoration: none;
-                &:hover {
-                  text-decoration: underline;
-                }
-              }
-              .date {
-                font-size: 12px;
-                color: gray;
-              }
-            }
-            .gallery-grid {
-              display: grid;
-              grid-template-columns: repeat(4, 1fr);
-              gap: 5px;
 
-              img {
-                width: 60px;
-                height: 60px;
-                object-fit: cover;
-                border-radius: 5px;
-              }
-            }
-          }
+.footer {
+  background-color: #231815;
+  color: paint.$ColdWhite;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-wrap: wrap;
+    padding: 0 10%;
+  }
+
+  .footer-section {
+    max-width: 200px;
+
+    .footer-title {
+      color: paint.$LightBlue;
+      font-size: 18px;
+      margin-bottom: 10px;
     }
+
+    p, a {
+      color: paint.$ColdWhite;
+      text-decoration: none;
+      font-size: 14px;
+
+      &:hover {
+        color: paint.$LightBlue;
+      }
+    }
+  }
+
+  .map iframe {
+    border-radius: 10px;
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+
+    .highlight {
+      color: paint.$LightBlue;
+    }
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 10px;
+
+    .social-icon {
+      font-size: 20px;
+      color: #fff;
+      transition: color 0.3s;
+
+      &:hover {
+        color: paint.$LightBlue;
+      }
+    }
+  }
+}

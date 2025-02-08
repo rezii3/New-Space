@@ -9,8 +9,8 @@ import { Component } from '@angular/core';
 })
 export class MainCardsComponent {
   Img = [
-    {src: 'assets/photos/koktaile.jpg', text: 'მენიუ',desc: 'ნიუ სფეისი არის კაფე-რესტორანი, სივრცე კომფორტული.'},
-    { src: 'assets/photos/IMG_4654.JPG', text: 'გარე სივრცე',desc: 'ნიუ სფეისი არის კაფე-რესტორანი, სივრცე კომფორტული.' },
-    { src: 'assets/photos/IMG_9995 (1).jpg', text: 'გარე სივრცე',desc: 'ნიუ სფეისი არის კაფე-რესტორანი, სივრცე კომფორტული.' }
+    {src: 'assets/photos/IMG_9924.jpg', text: 'ქორწილი',desc: 'თუკი ქორწილს გეგმავთ ნიუ სფეისი სწორედ შენთვისაა...'},
+    { src: 'assets/photos/IMG_4654.JPG', text: 'დაბადებისდღე',desc: 'თუკი დაბადებისდღის აღნიშვნას გეგმავთ ნიუ სფეისი...' },
+    { src: 'assets/photos/IMG_9995 (1).jpg', text: 'ბოლოზარი|ბანკეტი',desc: 'თუკი ბოლო ზარის ან ბანკეტის აღნიშვნას გეგმავთ ნიუ სფეისი...' }
   ];
 }

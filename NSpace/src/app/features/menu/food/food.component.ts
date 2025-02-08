@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './food.component.scss'
 })
 export class FoodComponent {
+  selectedCategory: string = ''; // შერჩეული კატეგორიის ცვლადი
+
   allCards = [
     { category: 'dishes', text: 'სტეიკი', image: '../../../../assets/photos/koktaile.jpg' },
     { category: 'dishes', text: 'დესერტი', image: '../../../../assets/photos/koktaile.jpg' },
@@ -20,11 +22,8 @@ export class FoodComponent {
   currentCards = this.allCards;
 
   loadCards(category: string) {
-    if (category === 'all') {
-      this.currentCards = this.allCards;
-    } else {
-      this.currentCards = this.allCards.filter(card => card.category === category);
-    }
+    this.selectedCategory = category; // ვცვლით active კატეგორიას
+    this.currentCards = this.allCards.filter(card => card.category === category);
   }
   
 }

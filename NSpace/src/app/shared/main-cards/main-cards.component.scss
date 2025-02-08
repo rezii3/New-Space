@@ -3,8 +3,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   width: 100%;
   margin: 50px 0px;
+  h1{
+  margin-bottom: 30px;
+  }
   .content{
     display: flex;
     align-items: center;
@@ -16,7 +20,7 @@
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       overflow: hidden;
-      max-width: 400px;
+      width: 350px;
       transition: transform 0.3s ease;
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       &:hover {

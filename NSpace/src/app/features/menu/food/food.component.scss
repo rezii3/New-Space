@@ -1,51 +1,50 @@
+@use '../../../style/paint.scss';
 
-@use'../../../style/paint.scss';
 .container {
-    margin-top: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: paint.$ColdWhite;
-  
-    .content {
-      width: 80%;
-      max-width: 1252px;
-      background: paint.$ColdWhite;
-      border-radius: 16px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-  
-      .top-side {
-        display: flex;
-        justify-content: space-around;
-        border-bottom: 2px solid paint.$ColdWhite;
-        padding-bottom: 10px;
-  
-        a {
-          text-decoration: none;
-          color: black;
-          font-size: 18px;
-          font-weight: bold;
-          padding: 10px 20px;
-          border-radius: 8px;
-          transition: all 0.3s ease;
-  
-          &:hover {
-            background-color: paint.$DarkBlue;
-            color: paint.$ColdWhite;
-          }
-  
-          &.active {
-            background-color: paint.$DarkBlue;
-            color: paint.$ColdWhite;
-          }
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: black;
+  .content {
+    width: 80%;
+    max-width: 1252px;
+    background: paint.$ColdWhite;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+
+    .top-side {
+      display: flex;
+      justify-content: space-around;
+      border-bottom: 2px solid paint.$ColdWhite;
+      padding-bottom: 10px;
+
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+
+        &:hover {
+          background-color: paint.$DarkBlue;
+          color: paint.$ColdWhite;
+        }
+
+        &.active {
+          background-color: paint.$DarkBlue;
+          color: paint.$ColdWhite;
         }
       }
-  
-      .bottom-side {
-        padding: 20px;
-      }
+    }
+
+    .bottom-side {
+      padding: 20px;
     }
   }
-  
+}
